@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		28C5A2AF1CDBE56A0008F4C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C5A2AE1CDBE56A0008F4C6 /* AppDelegate.swift */; };
-		28C5A2B11CDBE56A0008F4C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C5A2B01CDBE56A0008F4C6 /* ViewController.swift */; };
+		28C5A2B11CDBE56A0008F4C6 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C5A2B01CDBE56A0008F4C6 /* DrawingViewController.swift */; };
 		28C5A2B41CDBE56A0008F4C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C5A2B21CDBE56A0008F4C6 /* Main.storyboard */; };
 		28C5A2B71CDBE56A0008F4C6 /* easel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28C5A2B51CDBE56A0008F4C6 /* easel.xcdatamodeld */; };
 		28C5A2B91CDBE56A0008F4C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C5A2B81CDBE56A0008F4C6 /* Assets.xcassets */; };
 		28C5A2BC1CDBE56A0008F4C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C5A2BA1CDBE56A0008F4C6 /* LaunchScreen.storyboard */; };
 		28C5A2C71CDBE56A0008F4C6 /* easelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C5A2C61CDBE56A0008F4C6 /* easelTests.swift */; };
 		28C5A2D21CDBE56A0008F4C6 /* easelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C5A2D11CDBE56A0008F4C6 /* easelUITests.swift */; };
+		28C5A2E01CDBF51B0008F4C6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C5A2DF1CDBF51B0008F4C6 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		28C5A2AB1CDBE5690008F4C6 /* easel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C5A2AE1CDBE56A0008F4C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28C5A2B01CDBE56A0008F4C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28C5A2B01CDBE56A0008F4C6 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		28C5A2B31CDBE56A0008F4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28C5A2B61CDBE56A0008F4C6 /* easel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = easel.xcdatamodel; sourceTree = "<group>"; };
 		28C5A2B81CDBE56A0008F4C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		28C5A2CD1CDBE56A0008F4C6 /* easelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = easelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C5A2D11CDBE56A0008F4C6 /* easelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = easelUITests.swift; sourceTree = "<group>"; };
 		28C5A2D31CDBE56A0008F4C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C5A2DF1CDBF51B0008F4C6 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				28C5A2AE1CDBE56A0008F4C6 /* AppDelegate.swift */,
-				28C5A2B01CDBE56A0008F4C6 /* ViewController.swift */,
+				28C5A2B01CDBE56A0008F4C6 /* DrawingViewController.swift */,
 				28C5A2B21CDBE56A0008F4C6 /* Main.storyboard */,
 				28C5A2B81CDBE56A0008F4C6 /* Assets.xcassets */,
 				28C5A2BA1CDBE56A0008F4C6 /* LaunchScreen.storyboard */,
 				28C5A2BD1CDBE56A0008F4C6 /* Info.plist */,
 				28C5A2B51CDBE56A0008F4C6 /* easel.xcdatamodeld */,
+				28C5A2DF1CDBF51B0008F4C6 /* SettingsViewController.swift */,
 			);
 			path = easel;
 			sourceTree = "<group>";
@@ -259,9 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28C5A2B11CDBE56A0008F4C6 /* ViewController.swift in Sources */,
+				28C5A2B11CDBE56A0008F4C6 /* DrawingViewController.swift in Sources */,
 				28C5A2AF1CDBE56A0008F4C6 /* AppDelegate.swift in Sources */,
 				28C5A2B71CDBE56A0008F4C6 /* easel.xcdatamodeld in Sources */,
+				28C5A2E01CDBF51B0008F4C6 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
